@@ -177,7 +177,7 @@ function validateForm(form) {
 }
 
 function handleFormSubmit(form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!validateForm(form)) return;
 
@@ -189,20 +189,38 @@ function handleFormSubmit(form) {
       btn.textContent = 'Отправка...';
     }
 
-    // имитация отправки (replace with real fetch/ajax)
-    setTimeout(() => {
-      form.reset();
-      $$('.field-error', form).forEach(el => el.remove());
-      $$('.input-error', form).forEach(el => el.classList.remove('input-error'));
+    try {
+      const data = new FormData(form);
+      const res  = await fetch('submit.php', { method: 'POST', body: data });
+      const json = await res.json();
 
-      showSuccess(form);
-
+      if (json.ok) {
+        form.reset();
+        $$('.field-error', form).forEach(el => el.remove());
+        $$('.input-error', form).forEach(el => el.classList.remove('input-error'));
+        showSuccess(form);
+      } else {
+        const msg = json.error || (json.errors && json.errors.join(', ')) || 'Ошибка отправки';
+        showError(form, msg);
+      }
+    } catch (err) {
+      showError(form, 'Не удалось отправить заявку. Проверьте соединение.');
+    } finally {
       if (btn) {
         btn.disabled = false;
         btn.textContent = original;
       }
-    }, 1000);
+    }
   });
+}
+
+function showError(form, msg) {
+  form.parentElement.querySelector('.form-error')?.remove();
+  const el = document.createElement('div');
+  el.className = 'form-error';
+  el.textContent = '✗ ' + msg;
+  form.insertAdjacentElement('afterend', el);
+  setTimeout(() => el.remove(), 5000);
 }
 
 function showSuccess(form) {

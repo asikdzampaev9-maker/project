@@ -821,6 +821,15 @@ details[open] .faq__q::after { transform: rotate(45deg); }
   color: #39ff14;
   font-size: .9rem;
 }
+.form-error {
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  background: rgba(224,82,82,.08);
+  border: 1px solid rgba(224,82,82,.35);
+  border-radius: 8px;
+  color: #ff5252;
+  font-size: .9rem;
+}
 
 /* ─── JS-generated: modal open ──────────────────────── */
 .modal.open { opacity: 1; pointer-events: auto; }
