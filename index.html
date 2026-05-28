@@ -3,16 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Drupal Coder — лендинг</title>
+  <title>CodeNova — веб-студия полного цикла</title>
 
-  <!-- Fonts (замени на шрифты из fonts.txt, если в макете другие) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Swiper (слайдер) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -21,18 +18,14 @@
   <!-- HEADER -->
   <header class="header" id="top">
     <div class="header__bg">
-      <!-- Положи свой video.mp4 в assets/hero-bg.mp4 -->
-      <video class="header__video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-bg-poster.jpg">
-        <source src="./assets/hero-bg.mp4" type="video/mp4" />
-      </video>
       <div class="header__overlay" aria-hidden="true"></div>
     </div>
 
     <div class="container header__inner">
       <div class="nav">
         <a class="brand" href="#top" aria-label="На главную">
-          <span class="brand__mark">DC</span>
-          <span class="brand__text">Drupal Coder</span>
+          <span class="brand__mark">CN</span>
+          <span class="brand__text">CodeNova</span>
         </a>
 
         <!-- DESKTOP NAV -->
@@ -42,12 +35,12 @@
 
             <li class="menu__item menu__item--dropdown">
               <button class="menu__link menu__dropdownBtn" type="button" aria-expanded="false" aria-controls="dropdown-1">
-                Решения
+                Портфолио
                 <span class="chev" aria-hidden="true">▾</span>
               </button>
 
               <div class="dropdown" id="dropdown-1" role="menu">
-                <a class="dropdown__item" href="#cases" role="menuitem">Кейсы</a>
+                <a class="dropdown__item" href="#cases" role="menuitem">Проекты</a>
                 <a class="dropdown__item" href="#stack" role="menuitem">Стек</a>
                 <a class="dropdown__item" href="#team" role="menuitem">Команда</a>
               </div>
@@ -60,7 +53,7 @@
         </nav>
 
         <div class="nav__actions">
-          <button class="btn btn--ghost" id="openContact">Связь с нами</button>
+          <button class="btn btn--ghost" id="openContact">Получить консультацию</button>
           <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-controls="mobileMenu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
@@ -74,8 +67,8 @@
 
           <a class="mobileMenu__link" href="#services">Услуги</a>
           <details class="mobileMenu__details">
-            <summary class="mobileMenu__summary">Решения</summary>
-            <a class="mobileMenu__sublink" href="#cases">Кейсы</a>
+            <summary class="mobileMenu__summary">Портфолио</summary>
+            <a class="mobileMenu__sublink" href="#cases">Проекты</a>
             <a class="mobileMenu__sublink" href="#stack">Стек</a>
             <a class="mobileMenu__sublink" href="#team">Команда</a>
           </details>
@@ -83,36 +76,36 @@
           <a class="mobileMenu__link" href="#faq">FAQ</a>
           <a class="mobileMenu__link" href="#contacts">Контакты</a>
 
-          <button class="btn btn--primary mobileMenu__cta" id="openContactMobile">Связь с нами</button>
+          <button class="btn btn--primary mobileMenu__cta" id="openContactMobile">Получить консультацию</button>
         </nav>
         <div class="mobileMenu__backdrop" id="mobileBackdrop" aria-hidden="true"></div>
       </div>
 
       <!-- HERO -->
       <section class="hero">
-        <p class="pill">Разработка / Поддержка / Интеграции</p>
-        <h1 class="hero__title">Разрабатываем сайты и сервисы на Drupal</h1>
+        <p class="pill">Разработка · Дизайн · Продвижение</p>
+        <h1 class="hero__title">Создаём сайты, которые<br>приносят клиентов</h1>
         <p class="hero__subtitle">
-          Команда разработчиков, дизайнеров и аналитиков. Делаем быстро, поддерживаем долго.
+          Веб-студия полного цикла. Берём проект от идеи до запуска — и сопровождаем после.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contacts">Оставить заявку</a>
-          <a class="btn btn--ghost btn--onDark" href="#cases">Смотреть кейсы</a>
+          <a class="btn btn--primary" href="#contacts">Обсудить проект</a>
+          <a class="btn btn--ghost btn--onDark" href="#cases">Примеры работ</a>
         </div>
 
         <div class="hero__stats" aria-label="Ключевые показатели">
           <div class="stat">
-            <div class="stat__num">10+</div>
-            <div class="stat__label">лет опыта</div>
+            <div class="stat__num">7+</div>
+            <div class="stat__label">лет на рынке</div>
           </div>
           <div class="stat">
-            <div class="stat__num">120+</div>
-            <div class="stat__label">проектов</div>
+            <div class="stat__num">85+</div>
+            <div class="stat__label">сданных проектов</div>
           </div>
           <div class="stat">
-            <div class="stat__num">24/7</div>
-            <div class="stat__label">поддержка</div>
+            <div class="stat__num">97%</div>
+            <div class="stat__label">клиентов возвращаются</div>
           </div>
         </div>
       </section>
@@ -124,38 +117,38 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section__head">
-          <h2 class="section__title">Услуги</h2>
-          <p class="section__desc">Набор блоков и типографика под макет. Тексты заменишь на свои.</p>
+          <h2 class="section__title">Что мы делаем</h2>
+          <p class="section__desc">Полный спектр услуг для выхода бизнеса в интернет и роста онлайн-продаж.</p>
         </div>
 
         <div class="grid grid--3">
           <article class="card">
-            <h3 class="card__title">Разработка</h3>
-            <p class="card__text">Лендинги, корпоративные сайты, порталы, личные кабинеты.</p>
+            <h3 class="card__title">Сайты и лендинги</h3>
+            <p class="card__text">Корпоративные сайты, одностраничники, каталоги и личные кабинеты под ключ.</p>
             <ul class="list">
-              <li>Drupal / Symfony</li>
-              <li>API и интеграции</li>
-              <li>Тестирование</li>
+              <li>Разработка с нуля</li>
+              <li>Адаптив под любые устройства</li>
+              <li>Оптимизация скорости</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3 class="card__title">Поддержка</h3>
-            <p class="card__text">SLA, мониторинг, безопасность, обновления и бэкапы.</p>
+            <h3 class="card__title">Интернет-магазины</h3>
+            <p class="card__text">E-commerce решения: витрина, корзина, оплата, интеграция с CRM и складом.</p>
             <ul class="list">
-              <li>Регламент работ</li>
-              <li>Реакция на инциденты</li>
-              <li>Отчетность</li>
+              <li>Онлайн-оплата (ЮKassa, Stripe)</li>
+              <li>Интеграция с 1С / МойСклад</li>
+              <li>Личный кабинет покупателя</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3 class="card__title">Дизайн</h3>
-            <p class="card__text">UI/UX, дизайн-системы, прототипирование в Figma.</p>
+            <h3 class="card__title">Продвижение и SEO</h3>
+            <p class="card__text">Технический SEO-аудит, настройка аналитики, рост трафика из поисковиков.</p>
             <ul class="list">
-              <li>Компоненты</li>
-              <li>Адаптив</li>
-              <li>Хэнд-офф</li>
+              <li>Технический аудит</li>
+              <li>Настройка Яндекс.Метрика / GA4</li>
+              <li>Контент-стратегия</li>
             </ul>
           </article>
         </div>
@@ -167,8 +160,8 @@
       <div class="container">
         <div class="section__head section__head--row">
           <div>
-            <h2 class="section__title">Кейсы</h2>
-            <p class="section__desc">Подборка проектов: разработка, интеграции и поддержка Drupal‑решений.</p>
+            <h2 class="section__title">Наши проекты</h2>
+            <p class="section__desc">Реальные кейсы: от небольших лендингов до сложных платформ.</p>
           </div>
 
           <div class="sliderNav">
@@ -177,25 +170,25 @@
           </div>
         </div>
 
-        <div class="swiper" id="casesSwiper" aria-label="Слайдер кейсов">
+        <div class="swiper" id="casesSwiper" aria-label="Слайдер проектов">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <article class="case">
-                <div class="case__media" role="img" aria-label="Скриншот проекта 1"></div>
+                <div class="case__media" role="img" aria-label="Онлайн-магазин стройматериалов"></div>
                 <div class="case__body">
-                  <h3 class="case__title">HR‑портал для 5&nbsp;000 сотрудников</h3>
-                  <p class="case__text">Сделали портал обучения и внутренних сервисов: SSO, роли, курсы, отчёты и дашборды. Внедрили поисковую выдачу и оптимизировали TTFB на <b>-47%</b>.</p>
-                  <a class="case__link" href="#contacts">Оставить заявку →</a>
+                  <h3 class="case__title">Онлайн-магазин стройматериалов</h3>
+                  <p class="case__text">Разработали интернет-магазин с каталогом на 12&nbsp;000 позиций, фильтрами, личным кабинетом и интеграцией с 1С. Конверсия выросла на <b>+34%</b> после запуска.</p>
+                  <a class="case__link" href="#contacts">Хочу похожий проект →</a>
                 </div>
               </article>
             </div>
 
             <div class="swiper-slide">
               <article class="case">
-                <div class="case__media case__media--2" role="img" aria-label="Скриншот проекта 2"></div>
+                <div class="case__media case__media--2" role="img" aria-label="Корпоративный портал медклиники"></div>
                 <div class="case__body">
-                  <h3 class="case__title">Партнёрский кабинет финтех‑сервиса</h3>
-                  <p class="case__text">Собрали личный кабинет партнёров: заявки, статусы, документы, витрина API. Нагрузочное тестирование до <b>1&nbsp;200 rps</b>, SLA <b>99.9%</b>.</p>
+                  <h3 class="case__title">Портал для медицинской клиники</h3>
+                  <p class="case__text">Сайт с онлайн-записью к врачам, личным кабинетом пациента и интеграцией с МИС. Запись через сайт составила <b>60%</b> от общего потока за первый месяц.</p>
                   <a class="case__link" href="#contacts">Обсудить →</a>
                 </div>
               </article>
@@ -203,18 +196,18 @@
 
             <div class="swiper-slide">
               <article class="case">
-                <div class="case__media case__media--3" role="img" aria-label="Скриншот проекта 3"></div>
+                <div class="case__media case__media--3" role="img" aria-label="Лендинг для застройщика"></div>
                 <div class="case__body">
-                  <h3 class="case__title">HR‑портал для 5&nbsp;000 сотрудников</h3>
-                  <p class="case__text">Сделали портал обучения и внутренние сервисы: SSO, роли, курсы, отчёты, дашборды. Сократили время адаптации новичков на <b>−20%</b>.</p>
-                  <a class="case__link" href="#contacts">Оставить заявку →</a>
+                  <h3 class="case__title">Лендинг для жилого комплекса</h3>
+                  <p class="case__text">Промо-сайт с 3D-планировками, ипотечным калькулятором и формой бронирования. Стоимость лида снизилась на <b>−28%</b> по сравнению с предыдущим сайтом.</p>
+                  <a class="case__link" href="#contacts">Получить КП →</a>
                 </div>
               </article>
             </div>
           </div>
         </div>
 
-        </div>
+      </div>
     </section>
 
     <!-- STACK -->
@@ -222,18 +215,18 @@
       <div class="container">
         <div class="section__head">
           <h2 class="section__title">Технологии</h2>
-          <p class="section__desc">Стек, который используем в проектах ежедневно.</p>
+          <p class="section__desc">Используем современный стек — без устаревших решений.</p>
         </div>
 
         <div class="chips">
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c3 3 6 6 6 10a6 6 0 1 1-12 0c0-4 3-7 6-10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Drupal</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8l-3 4 3 4M17 8l3 4-3 4M10 19l4-14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">JavaScript</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">React</span></span>
           <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h10a4 4 0 0 1 0 8H9v4H4V7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">PHP</span></span>
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Symfony</span></span>
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7c0-2 4-4 8-4s8 2 8 4-4 4-8 4-8-2-8-4zm0 0v10c0 2 4 4 8 4s8-2 8-4V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">MySQL</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c3 3 6 6 6 10a6 6 0 1 1-12 0c0-4 3-7 6-10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Node.js</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7c0-2 4-4 8-4s8 2 8 4-4 4-8 4-8-2-8-4zm0 0v10c0 2 4 4 8 4s8-2 8-4V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">PostgreSQL</span></span>
           <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 14h16v4H4v-4zm4-10h4v4H8V4zm6 0h4v4h-4V4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Docker</span></span>
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7l10 10M7 7h4v4M17 17h-4v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Git</span></span>
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8l-3 4 3 4M17 8l3 4-3 4M10 19l4-14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">CI/CD</span></span>
-          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5v14M7 7l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">REST</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3l14 9-14 9V3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">Figma</span></span>
+          <span class="chip chip--icon"><svg class="chip__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5v14M7 7l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="chip__text">REST API</span></span>
         </div>
       </div>
     </section>
@@ -242,52 +235,57 @@
     <section class="section section--alt" id="pricing">
       <div class="container">
         <div class="section__head">
-          <h2 class="section__title">Тарифы</h2>
-          <p class="section__desc">Прозрачные пакеты работ для запуска и поддержки Drupal‑решений.</p>
+          <h2 class="section__title">Стоимость</h2>
+          <p class="section__desc">Фиксированные пакеты — без скрытых платежей и переплат.</p>
         </div>
 
         <div class="grid grid--3">
           <article class="price">
             <div class="price__top">
-              <h3 class="price__title">Старт</h3>
-              <p class="price__sum">€390</p>
-              <p class="price__sub">в месяц</p>
+              <h3 class="price__title">Лендинг</h3>
+              <p class="price__sum">от 25 000 ₽</p>
+              <p class="price__sub">срок 7–10 дней</p>
             </div>
             <ul class="list">
-              <li>Техническая поддержка</li>
-              <li>1–2 задачи</li>
-              <li>Мониторинг</li>
+              <li>1 страница под ключ</li>
+              <li>Адаптивный дизайн</li>
+              <li>Форма заявки</li>
+              <li>Базовый SEO</li>
             </ul>
-            <button class="btn btn--ghost price__btn" data-open-contact>Выбрать</button>
+            <button class="btn btn--ghost price__btn" data-open-contact>Заказать</button>
           </article>
 
           <article class="price price--accent" aria-label="Рекомендуемый тариф">
             <div class="price__badge">Популярный</div>
             <div class="price__top">
-              <h3 class="price__title">Бизнес</h3>
-              <p class="price__sum">€990</p>
-              <p class="price__sub">в месяц</p>
+              <h3 class="price__title">Корпоративный сайт</h3>
+              <p class="price__sum">от 65 000 ₽</p>
+              <p class="price__sub">срок 3–4 недели</p>
             </div>
             <ul class="list">
-              <li>До 10 задач</li>
-              <li>SLA 8/5</li>
-              <li>Резервное копирование</li>
+              <li>До 10 страниц</li>
+              <li>CMS и панель управления</li>
+              <li>Блог / новости</li>
+              <li>Яндекс.Метрика + цели</li>
+              <li>3 месяца поддержки</li>
             </ul>
-            <button class="btn btn--primary price__btn" data-open-contact>Связаться</button>
+            <button class="btn btn--primary price__btn" data-open-contact>Обсудить</button>
           </article>
 
           <article class="price">
             <div class="price__top">
-              <h3 class="price__title">Энтерпрайз</h3>
-              <p class="price__sum">€1990</p>
-              <p class="price__sub">в месяц</p>
+              <h3 class="price__title">Интернет-магазин</h3>
+              <p class="price__sum">от 120 000 ₽</p>
+              <p class="price__sub">срок 4–8 недель</p>
             </div>
             <ul class="list">
-              <li>Выделенная команда</li>
-              <li>SLA 24/7</li>
-              <li>DevOps</li>
+              <li>Каталог без ограничений</li>
+              <li>Онлайн-оплата</li>
+              <li>Интеграция с 1С / МойСклад</li>
+              <li>Личный кабинет покупателя</li>
+              <li>6 месяцев поддержки</li>
             </ul>
-            <button class="btn btn--ghost price__btn" data-open-contact>Обсудить</button>
+            <button class="btn btn--ghost price__btn" data-open-contact>Получить КП</button>
           </article>
         </div>
       </div>
@@ -297,22 +295,26 @@
     <section class="section" id="faq">
       <div class="container">
         <div class="section__head">
-          <h2 class="section__title">FAQ</h2>
-          <p class="section__desc">Ответы на частые вопросы о сроках, поддержке и интеграциях.</p>
+          <h2 class="section__title">Частые вопросы</h2>
+          <p class="section__desc">Отвечаем на самое важное до начала работы.</p>
         </div>
 
         <div class="faq">
           <details class="faq__item">
-            <summary class="faq__q">Сколько занимает разработка?</summary>
-            <div class="faq__a">Обычно 2–8 недель, зависит от объема и интеграций.</div>
+            <summary class="faq__q">Сколько времени займёт разработка моего сайта?</summary>
+            <div class="faq__a">Лендинг — 7–10 рабочих дней, корпоративный сайт — 3–4 недели, интернет-магазин — от 4 до 8 недель. Точные сроки зависят от объёма и сложности проекта. После обсуждения задачи мы фиксируем дедлайн в договоре.</div>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">Можно ли поддерживать текущий сайт?</summary>
-            <div class="faq__a">Да, проводим аудит и берем на поддержку по SLA.</div>
+            <summary class="faq__q">Что входит в поддержку после запуска?</summary>
+            <div class="faq__a">В течение гарантийного периода (30 дней) мы бесплатно исправляем любые ошибки. После этого доступны ежемесячные пакеты поддержки: обновления, мелкие правки, мониторинг работоспособности и бэкапы.</div>
           </details>
           <details class="faq__item">
-            <summary class="faq__q">Какие гарантии?</summary>
-            <div class="faq__a">Договор, отчетность, контроль качества и тестирование.</div>
+            <summary class="faq__q">Могу ли я сам редактировать сайт после сдачи?</summary>
+            <div class="faq__a">Да, все проекты сдаются с удобной CMS. Мы обучаем клиента работе с панелью управления и прилагаем видеоинструкцию. Также доступна настройка прав доступа для нескольких сотрудников.</div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Работаете ли вы по договору и с юрлицами?</summary>
+            <div class="faq__a">Да, работаем как с физическими лицами, так и с ИП и ООО. Заключаем официальный договор, предоставляем закрывающие документы и счёт-фактуру. Оплата по безналичному расчёту или картой.</div>
           </details>
         </div>
       </div>
@@ -322,44 +324,44 @@
     <section class="section section--alt" id="contacts">
       <div class="container">
         <div class="section__head">
-          <h2 class="section__title">Оставить заявку</h2>
-          <p class="section__desc">Оставьте контакты — ответим в течение рабочего дня и предложим план работ.</p>
+          <h2 class="section__title">Обсудим проект?</h2>
+          <p class="section__desc">Оставьте контакты — ответим в течение 2 часов и предложим варианты решения.</p>
         </div>
 
         <div class="contact">
           <form class="form" id="contactForm" novalidate>
             <div class="form__row">
               <label class="field">
-                <span class="field__label">Имя</span>
-                <input class="field__input" type="text" name="name" autocomplete="name" required minlength="2" />
+                <span class="field__label">Ваше имя</span>
+                <input class="field__input" type="text" name="name" autocomplete="name" placeholder="Алексей" required minlength="2" />
                 <span class="field__error" data-error-for="name"></span>
               </label>
 
               <label class="field">
                 <span class="field__label">Телефон</span>
-                <input class="field__input" type="tel" name="phone" autocomplete="tel" required minlength="6" />
+                <input class="field__input" type="tel" name="phone" autocomplete="tel" placeholder="+7 (900) 000-00-00" required minlength="6" />
                 <span class="field__error" data-error-for="phone"></span>
               </label>
 
               <label class="field">
                 <span class="field__label">Email</span>
-                <input class="field__input" type="email" name="email" autocomplete="email" required />
+                <input class="field__input" type="email" name="email" autocomplete="email" placeholder="mail@company.ru" required />
                 <span class="field__error" data-error-for="email"></span>
               </label>
             </div>
 
             <label class="field">
-              <span class="field__label">Сообщение</span>
-              <textarea class="field__input field__input--area" name="message" rows="5" required minlength="10"></textarea>
+              <span class="field__label">Расскажите о задаче</span>
+              <textarea class="field__input field__input--area" name="message" rows="5" placeholder="Опишите, что нужно сделать: тип сайта, примерный объём, сроки и бюджет" required minlength="10"></textarea>
               <span class="field__error" data-error-for="message"></span>
             </label>
 
             <div class="form__foot">
               <button class="btn btn--primary" type="submit" id="submitBtn">
-                <span class="btn__text">Отправить</span>
+                <span class="btn__text">Отправить заявку</span>
                 <span class="btn__spinner" aria-hidden="true"></span>
               </button>
-              <p class="form__note">Нажимая «Отправить», вы соглашаетесь на обработку данных.</p>
+              <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
             </div>
 
             <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
@@ -367,11 +369,12 @@
 
           <aside class="contact__info">
             <div class="infoCard">
-              <h3 class="infoCard__title">Контакты</h3>
+              <h3 class="infoCard__title">Свяжитесь с нами</h3>
               <div class="infoCard__rows">
-                <div><span class="muted">Email:</span> hello@example.com</div>
-                <div><span class="muted">Тел:</span> +370 (000) 00000</div>
-                <div><span class="muted">Город:</span> Vilnius</div>
+                <div><span class="muted">Email:</span> hello@codenova.ru</div>
+                <div><span class="muted">Тел:</span> +7 (495) 123-45-67</div>
+                <div><span class="muted">Telegram:</span> @codenova_studio</div>
+                <div><span class="muted">Режим:</span> Пн–Пт, 9:00–19:00</div>
               </div>
             </div>
           </aside>
@@ -382,41 +385,40 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© <span id="year"></span> Drupal Coder</p>
+      <p class="muted">© <span id="year"></span> CodeNova — веб-студия полного цикла</p>
       <a class="muted" href="#top">Наверх ↑</a>
     </div>
   </footer>
 
-  <!-- CONTACT MODAL (для усложненного задания можно вынести в React; здесь — vanilla) -->
-  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Связь с нами">
+  <!-- CONTACT MODAL -->
+  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Получить консультацию">
     <div class="modal__backdrop" data-close-modal></div>
     <div class="modal__panel" role="document">
       <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal>✕</button>
-      <h3 class="modal__title">Связь с нами</h3>
-      
+      <h3 class="modal__title">Получить консультацию</h3>
 
       <form class="form form--compact" id="modalForm" novalidate>
         <label class="field">
-          <span class="field__label">Имя</span>
-          <input class="field__input" type="text" name="name" autocomplete="name" required minlength="2" />
+          <span class="field__label">Ваше имя</span>
+          <input class="field__input" type="text" name="name" autocomplete="name" placeholder="Алексей" required minlength="2" />
           <span class="field__error" data-error-for="name"></span>
         </label>
 
         <label class="field">
           <span class="field__label">Телефон</span>
-          <input class="field__input" type="tel" name="phone" autocomplete="tel" required minlength="6" />
+          <input class="field__input" type="tel" name="phone" autocomplete="tel" placeholder="+7 (900) 000-00-00" required minlength="6" />
           <span class="field__error" data-error-for="phone"></span>
         </label>
 
         <label class="field">
           <span class="field__label">Email</span>
-          <input class="field__input" type="email" name="email" autocomplete="email" required />
+          <input class="field__input" type="email" name="email" autocomplete="email" placeholder="mail@company.ru" required />
           <span class="field__error" data-error-for="email"></span>
         </label>
 
         <label class="field">
-          <span class="field__label">Сообщение</span>
-          <textarea class="field__input field__input--area" name="message" rows="4" required minlength="10"></textarea>
+          <span class="field__label">Кратко о проекте</span>
+          <textarea class="field__input field__input--area" name="message" rows="3" placeholder="Тип сайта, сроки, бюджет..." required minlength="10"></textarea>
           <span class="field__error" data-error-for="message"></span>
         </label>
 
